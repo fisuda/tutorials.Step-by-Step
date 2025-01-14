@@ -7,6 +7,29 @@ This is an umbrella repository which holds collections of  **NGSI-v2** and **NGS
 learn about the [FIWARE](https://www.fiware.org/) ecosystem and allow users and developers to easily navigate to the relevant 
 source code, documentation and Docker images.
 
+<!--- GLOBAL SUMMIT BANNER AD
+| <a href="https://www.fiware.org/global-summit/"><img src="https://fiware.github.io//catalogue/img/Summit23.png" width="240" height="70" /></a> | <a href="https://www.eventbrite.com/e/fiware-on-site-training-tickets-591474775977"><img src="https://fiware.github.io//catalogue/img/Training23.png" width="240" height="70" /></a> |
+| --- | --- |
+--->
+
+---
+
+> [!NOTE]
+>  ### Should I be using NGSI-v2 or NGSI-LD?
+> 
+>  FIWARE offers two flavours of the NGSI interfaces:
+>
+>  -  **NGSI-v2** offers JSON based interoperability used in individual Smart Systems
+>  -  **NGSI-LD** offers JSON-LD based interoperability used for Federations and Data Spaces
+>
+>  NGSI-v2 is ideal for creating individual applications offering interoperable interfaces for web services or IoT devices. It is easier to understand than NGSI-LD and does not require a [JSON-LD
+`@context`](https://www.w3.org/TR/json-ld11/#the-context).
+>
+>  However, NGSI-LD and Linked Data is necessary when creating a data space or introducing a system of systems aproach, and in situations requiring
+>  interoperability across apps and organisations.
+
+---
+
 ## [<img src="https://img.shields.io/badge/NGSI-v2-5dc0cf.svg" width="90"  align="left" />]("https://fiware-ges.github.io/orion/api/v2/stable/) Smart Supermarket
 
 This is a collection of tutorials for the FIWARE ecosystem designed for **NGSI-v2** developers. Each tutorial,  based around a 
@@ -29,6 +52,8 @@ manipulating the context directly or programmatically.
 
 | :movie_camera: [Introduction<br>to Linked Data](https://www.youtube.com/watch?v=4x_xzT5eF5Q) |  :movie_camera: [Introduction<br>to NGSI-LD](https://www.youtube.com/watch?v=rZ13IyLpAtA) | :books: [NGSI-LD Tutorial<br>Documentation](https://ngsi-ld-tutorials.rtfd.io/) | 
 |---| ---------------------------------------------------------------------- | --- |
+
+---
 
 ## Install
 
@@ -63,20 +88,16 @@ docker-compose -v
 docker version
 ```
 
-Please ensure that you are using Docker version 18.03 or higher and Docker Compose 1.21 or higher and upgrade if
+Please ensure that you are using Docker version 24.0.x or higher and Docker Compose 2.24.x or higher and upgrade if
 necessary.
 
-### Postman <img src="https://www.postman.com/favicon-32x32.png" align="left"  height="30" width="30">
+### Postman <img src="https://raw.githubusercontent.com/FIWARE/tutorials.Step-by-Step/master/img/postman.svg" align="left"  height="30" width="30">
 
 The tutorials which use HTTP requests supply a collection for use with the Postman utility. Postman is a testing
-framework for REST APIs. The tool can be downloaded from [www.getpostman.com](www.getpostman.com). All the FIWARE
+framework for REST APIs. The tool can be downloaded from [www.getpostman.com](https://www.postman.com/downloads/). All the FIWARE
 Postman collections can downloaded directly from the
 [Postman API network](https://explore.postman.com/team/3mM5EY6ChBYp9D)
 
-### Cygwin for Windows <img src="https://www.cygwin.com/favicon.ico" align="left"  height="30" width="30" style="border-right-style:solid; border-right-width:10px; border-color:transparent; background: transparent">
-
-We will start up our services using a simple Bash script. Windows users should download [cygwin](http://www.cygwin.com/)
-to provide a command-line functionality similar to a Linux distribution on Windows.
 
 ### Apache Maven <img src="https://maven.apache.org/favicon.ico" align="left"  height="30" width="30" style="border-right-style:solid; border-right-width:10px; border-color:transparent; background: transparent">
 
@@ -85,8 +106,14 @@ the concept of a project object model (POM), Maven can manage a project's build,
 central piece of information. Maven can be used to define and download our dependencies and to build and package Java or
 Scala code into a JAR file.
 
+### Windows Subsystem for Linux
+
+We will start up our services using a simple bash script. Windows users should download the
+[Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) to provide a command-line
+functionality similar to a Linux distribution on Windows.
+
 ---
 
 ## License
 
-[MIT](LICENSE) © 2018-2021 FIWARE Foundation e.V.
+[MIT](LICENSE) © 2018-2024 FIWARE Foundation e.V.
